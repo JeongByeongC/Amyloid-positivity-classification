@@ -25,8 +25,6 @@ if subtype
     
     group_prob = group_prob/iter;
     [~, ci] = max(group_prob, [], 2);
-%     [sorted, idx] = sort(mean_suvr);
-    
     [~, idx] = sort(ci);
     sorted_ed_mat = norm_ed_mat(idx, idx);
 else
