@@ -16,8 +16,6 @@ GT_label = meta.BAPL;
 GT_label(GT_label == 1) = 0; % amyloid negative
 GT_label(GT_label == 2 | GT_label == 3) = 1; % amyloid positive
 
-
-% y_new_group = Newman_classifier(meta.suvr68, true);
 [y_new_group, group_prob] = Louvain_classfier(meta.suvr68, 0.9, 10000, false, true);
 y_new_group(y_new_group == 2) = 0; % gender 2 = felmale
 
