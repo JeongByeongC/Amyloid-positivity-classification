@@ -1,7 +1,6 @@
 clc; clear all; close all;
 %%
 train_files = csvread('../AMY_pos_neg_classification/SUVR68_train.csv');
-% load('../AMY_pos_neg_classification/meta_210210.mat');
 load('./meta_220618.mat');
 train_id_from_csv = train_files(:, 1);
 train_id = cell(length(train_id_from_csv), 1);
