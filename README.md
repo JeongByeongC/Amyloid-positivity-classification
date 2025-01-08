@@ -20,4 +20,26 @@ if you want to see details see [here](https://petalite-linseed-228.notion.site/A
  
   + louvain_KNN.m: Training the Louvain-KNN classifier
 
-+ 
++ GCN_classifier.py: Amyloid positivity classification using graph convolutional neural network (GCN) with or without updating the similarity matrix
+
++ GCN_draw.m: Bar plot for prediction results
+
++ analysis_weight.m: Draw the learned weights
+
++ gcn_conv.py: GCN module
+
++ predict.py: Predict the amyloid positivity using trained GCN
+
+## Usage
+
+for Luvain method:
+
+```
+matlab -nodisplay -nosplash -r    "run('louvain_KNN.m'); exit"
+```
+
+for GCN methd:
+
+```
+python GCN_classifier.py {number_of_channels_for_GCN} {update_flag}
+```
